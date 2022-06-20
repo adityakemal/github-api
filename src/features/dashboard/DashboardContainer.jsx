@@ -35,7 +35,7 @@ export default function DashboardContainer() {
                     }
                     <div className="wrap-input">
                         🔍
-                        <input placeholder='Search your Github username' type="text" value={query} name='search' onChange={event => setQuery(event.target.value)} />
+                        <input placeholder='Search github username' type="text" value={query} name='search' onChange={event => setQuery(event.target.value)} />
                         {
                             loading && <small><pre>loading...</pre></small>
                         }
