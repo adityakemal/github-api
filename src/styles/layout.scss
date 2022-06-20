@@ -1,0 +1,42 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: $dark;
+
+    nav {
+        background-color: $dark;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        color: white;
+        align-items: center;
+        position: sticky;
+        top: 0;
+
+        // span {
+        //     font-family: 'Rubik Microbe', cursive;
+        //     font-size: 40px;
+        // }
+
+    }
+
+    main {
+        background-color: white;
+        overflow-y: auto;
+    }
+
+    footer {
+        background-color: $dark;
+        color: $light;
+        display: flex;
+        padding: 20px 60px;
+        justify-content: center;
+        align-items: center;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+}

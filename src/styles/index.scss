@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+}
+
+
+//colors variable
+$dark: #17252A;
+$blue: #3aafa9;
+$white: #feffff;
+$light: #def2f1;
+
+
+//import all css pages
+@import './layout.scss';
+@import './dashboard.scss';
+@import './profile.scss';
+@import './detail-repo.scss';

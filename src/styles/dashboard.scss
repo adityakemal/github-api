@@ -1,0 +1,116 @@
+.dashboard {
+    background-color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    // width: 100vw;
+
+
+    .content {
+        width: 600px;
+        background-color: $dark;
+        padding: 10px;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 70px;
+            color: $light;
+            font-weight: normal;
+            // letter-spacing: -5px;
+            text-align: center;
+            line-height: 50px;
+            font-family: 'Rubik Microbe', cursive;
+        }
+
+        small {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 25px;
+            color: white;
+            float: right;
+            // background-color: #fff;
+            width: 100%;
+        }
+
+        .wrap-input {
+            position: sticky;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            border-radius: 100px;
+            // border: 1px solid $dark;
+            height: 35px;
+            background-color: $white;
+            padding: 5px 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 300 !important;
+
+            input {
+                font-weight: 300 !important;
+                margin-left: 10px;
+                font-size: 20px;
+                width: 100%;
+                border: 0;
+                height: 100%;
+                outline: 0;
+
+                &::placeholder {
+                    font-weight: 300 !important;
+                    color: $dark;
+                }
+            }
+        }
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+            transition: all .3s;
+            // background-color: red;
+            max-height: 70vh;
+            overflow-y: auto;
+
+            li {
+                border: 1px solid $light;
+                color: white;
+                overflow: hidden;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                justify-content: space-between;
+                padding: 5px 10px;
+                list-style-type: none;
+
+                // border: 1px solid $light;
+                border-radius: 6px;
+                transition: all .3s;
+                font-weight: 300;
+
+
+                &:hover {
+                    background-color: rgb(245, 245, 245);
+                    font-weight: 400;
+                    color: $dark;
+                    transition: all .3s;
+                }
+
+                .profile-list {
+                    display: flex;
+                    align-items: center;
+                }
+
+                img {
+                    transition: all .3s;
+                    height: 25px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
